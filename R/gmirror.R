@@ -47,7 +47,7 @@ gmirror <- function(top, bottom, tline, bline, log10=TRUE, yaxis, opacity=1, ann
   bottom$Location <- "Bottom"
   d <- rbind(top, bottom)
   d$POS <- as.numeric(as.character(d$POS))
-  d$CHR <- factor(d$CHR, levels = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "X", "Y"))
+  d$CHR <- factor(d$CHR, levels = c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"))
   d_order <- d[order(d$CHR, d$POS), ]
   d_order$pos_index <- seq.int(nrow(d_order))
   d_order_sub <- d_order[, c("SNP", "CHR", "POS", "pvalue", "pos_index")]

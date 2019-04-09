@@ -7,7 +7,7 @@ hudson is an R package for creating mirrored Manhattan plots with a shared x-axi
 ## Installation
 As of now, there is only a development version of the package which can be installed using devtools.
 
-```devtools::install_github('anastasia-lucas/hudson')```
+```devtools::install_github('BobFonix/hudson')```
 
 This package uses ggplot2 and gridExtra. ggrepel is suggested for improved text annotation, but not required. The default color palette contains 15 colors; if additional colors are required, RColorBrewer can be used to create an expanded palette. 
 
